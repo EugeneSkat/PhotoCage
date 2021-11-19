@@ -1,6 +1,6 @@
 #body
 {
-  max-width: 250%;
+  max-width: 100%;
     background-color:rgba(83, 151, 153, 0.315);
 }
 .menu__item{
@@ -255,7 +255,7 @@ font-family: monospace;
     display: inline-block;
     vertical-align: top;
     position: relative;
-    width: 1000px;
+    width: 50%;
   }
   input[type="search"]{
     outline: none;
@@ -268,8 +268,8 @@ font-family: monospace;
     border-radius: 25px;
   }
   .button_form{
-    position: absolute; top: 8px; right: 10px;
-    z-index: 9;
+    position: absolute; top: 7px; right: 10px;
+    z-index: 1;
     outline: none;
     size: 20px;
     border: none;
@@ -313,6 +313,7 @@ font-family: monospace;
   }
 .nav-panel
 {
+  width: 100%;
   background-color: bisque;
 }
 .block
