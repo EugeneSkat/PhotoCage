@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotoCage</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="shortcut icon"href="img/photo-camera.ico">
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="js/animate.js">
   <link rel="stylesheet" href="css/styles.css">
   <style type="text/css">
     TABLE {
+      
+      position:relative;
      width: 100%;
     }
     TD {
      vertical-align:top;
     }
     #col1 {
-     width: 300px;
+     width: 25%;
     }
     #col2 {
-      width:100px;
+      width:25%;
     }
     #col3 {
-     width: 100px;
+     width: 15%;
     }
    </style>
 </head>
@@ -37,7 +41,7 @@
           <img src="img/Photo.png" alt="PhotoCage" class="logo">
         </div>
 
-        <div class="col-lg-8 ms-auto">
+        <div class="col-lg-9 ms-6">
           <nav>
             <ul class="menu d-flex justify-content-center">
               <li class="menu__item">
@@ -51,7 +55,7 @@
 
               <li class="menu__item">
                 <a href="index.html">
-                  <button  class="form__btn"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="photo-film" class="svg-inline--fa fa-photo-film" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="30px"><path fill="currentColor" d="M352 432c0 8.836-7.164 16-16 16H176c-8.838 0-16-7.164-16-16L160 128H48C21.49 128 .0003 149.5 .0003 176v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48L512 384h-160L352 432zM104 439c0 4.969-4.031 9-9 9h-30c-4.969 0-9-4.031-9-9v-30c0-4.969 4.031-9 9-9h30c4.969 0 9 4.031 9 9V439zM104 335c0 4.969-4.031 9-9 9h-30c-4.969 0-9-4.031-9-9v-30c0-4.969 4.031-9 9-9h30c4.969 0 9 4.031 9 9V335zM104 231c0 4.969-4.031 9-9 9h-30c-4.969 0-9-4.031-9-9v-30C56 196 60.03 192 65 192h30c4.969 0 9 4.031 9 9V231zM408 409c0-4.969 4.031-9 9-9h30c4.969 0 9 4.031 9 9v30c0 4.969-4.031 9-9 9h-30c-4.969 0-9-4.031-9-9V409zM591.1 0H239.1C213.5 0 191.1 21.49 191.1 48v256c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48v-256C640 21.49 618.5 0 591.1 0zM303.1 64c17.68 0 32 14.33 32 32s-14.32 32-32 32C286.3 128 271.1 113.7 271.1 96S286.3 64 303.1 64zM574.1 279.6C571.3 284.8 565.9 288 560 288H271.1C265.1 288 260.5 284.6 257.7 279.3C255 273.9 255.5 267.4 259.1 262.6l70-96C332.1 162.4 336.9 160 341.1 160c5.11 0 9.914 2.441 12.93 6.574l22.35 30.66l62.74-94.11C442.1 98.67 447.1 96 453.3 96c5.348 0 10.34 2.672 13.31 7.125l106.7 160C576.6 268 576.9 274.3 574.1 279.6z"></path></svg>Gallery</button>
+                  <button  class="form__btnGA"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="photo-film" class="svg-inline--fa fa-photo-film" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="30px"><path fill="currentColor" d="M352 432c0 8.836-7.164 16-16 16H176c-8.838 0-16-7.164-16-16L160 128H48C21.49 128 .0003 149.5 .0003 176v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48L512 384h-160L352 432zM104 439c0 4.969-4.031 9-9 9h-30c-4.969 0-9-4.031-9-9v-30c0-4.969 4.031-9 9-9h30c4.969 0 9 4.031 9 9V439zM104 335c0 4.969-4.031 9-9 9h-30c-4.969 0-9-4.031-9-9v-30c0-4.969 4.031-9 9-9h30c4.969 0 9 4.031 9 9V335zM104 231c0 4.969-4.031 9-9 9h-30c-4.969 0-9-4.031-9-9v-30C56 196 60.03 192 65 192h30c4.969 0 9 4.031 9 9V231zM408 409c0-4.969 4.031-9 9-9h30c4.969 0 9 4.031 9 9v30c0 4.969-4.031 9-9 9h-30c-4.969 0-9-4.031-9-9V409zM591.1 0H239.1C213.5 0 191.1 21.49 191.1 48v256c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48v-256C640 21.49 618.5 0 591.1 0zM303.1 64c17.68 0 32 14.33 32 32s-14.32 32-32 32C286.3 128 271.1 113.7 271.1 96S286.3 64 303.1 64zM574.1 279.6C571.3 284.8 565.9 288 560 288H271.1C265.1 288 260.5 284.6 257.7 279.3C255 273.9 255.5 267.4 259.1 262.6l70-96C332.1 162.4 336.9 160 341.1 160c5.11 0 9.914 2.441 12.93 6.574l22.35 30.66l62.74-94.11C442.1 98.67 447.1 96 453.3 96c5.348 0 10.34 2.672 13.31 7.125l106.7 160C576.6 268 576.9 274.3 574.1 279.6z"></path></svg>Gallery</button>
                 </a>
               </li>
 
@@ -63,7 +67,7 @@
               
               <li class="menu__item">
                 <a href="#">
-                  <button class="form__btn"> <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="power-off" class="svg-inline--fa fa-power-off" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px"><path fill="currentColor" d="M256 288c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32S224 14.33 224 32v224C224 273.7 238.3 288 256 288zM403.7 66.81c-13.92-10.84-34.03-8.406-44.92 5.5c-10.89 13.94-8.438 34.03 5.484 44.94C407.3 150.9 432 201.5 432 256c0 97.03-78.95 176-176 176S80 353 80 256c0-54.53 24.69-105.1 67.72-138.8c13.92-10.91 16.38-31 5.484-44.94c-10.91-13.91-31-16.34-44.92-5.5C49.64 112.7 16 181.7 16 256c0 132.3 107.7 240 240 240s240-107.7 240-240C496 181.7 462.4 112.7 403.7 66.81z"></path></svg><style margin="30px"></style>Logout</button>
+                  <button class="form__btn3"> <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="power-off" class="svg-inline--fa fa-power-off pof" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30px"><path fill="currentColor" d="M256 288c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32S224 14.33 224 32v224C224 273.7 238.3 288 256 288zM403.7 66.81c-13.92-10.84-34.03-8.406-44.92 5.5c-10.89 13.94-8.438 34.03 5.484 44.94C407.3 150.9 432 201.5 432 256c0 97.03-78.95 176-176 176S80 353 80 256c0-54.53 24.69-105.1 67.72-138.8c13.92-10.91 16.38-31 5.484-44.94c-10.91-13.91-31-16.34-44.92-5.5C49.64 112.7 16 181.7 16 256c0 132.3 107.7 240 240 240s240-107.7 240-240C496 181.7 462.4 112.7 403.7 66.81z"></path></svg><style margin="30px"></style>Logout</button>
                 </a>
               </li>
 
@@ -78,23 +82,32 @@
     <div class="Gallery">
       Gallery
     </div>
-    <hr  style="height:5px;  width: 100%;">
-    <hr  style=" height:10px; width: 100% ;color:#333;background-color:#333">
-    <hr  style="height:15px; width: 100%;;color:#333;background-color:#333">
+    <div class="container-fluid">
+      <hr  style=" height:9px; border:lightcoral;color:#333;background-color:cadetblue">
+     <hr  style=" height:6px; border:lightcoral;color:lawngreen;background-color:cadetblue">
+     <hr  style="height:3px;border:rgb(240, 126, 126);color:#333;background-color:cadetblue">
+    </div>
     <div class="Gallery">
       <div class="col-lg-12">
         Share your pictures with world!<br>
-        <form action="/С:">
-          <input type="search" placeholder="Search files" class="search">
+        <form action="/С:">         <input type="search" placeholder="Search files" class="search">
           <a href='Pictures'>
           <button type="submit" class="button_form">Browse</button>
           </a>
           <button type="upload" class="form__btn ">Upload file</button>
         </form>
-        <hr  style="height:15px">
-    <hr  style=" height:10px; border:lightcoral;color:#333;background-color:#333">
-    <hr  style="height:5px;border:rgb(240, 126, 126);color:#333;background-color:#333">
+        <div class="container-fluid">
+          <hr  style=" height:3px; border:lightcoral;color:#333;background-color:cadetblue">
+         <hr  style=" height:6px; border:lightcoral;color:lawngreen;background-color:cadetblue">
+         <hr  style="height:9px;border:rgb(240, 126, 126);color:#333;background-color:cadetblue">
+        </div>
+
+
+<div class="panorama">
+      <canvas id="canvas" width="800" height="200"></canvas>
       </div>
+     
+
       <table cellpadding="5" cellspacing="0">
         <tr>
          <td id="col1"> 
@@ -122,7 +135,7 @@
          <div class="share">
          share:  
          </div>
-         <li><a href='https://m.facebook.com/login/?locale2=ru_RU'><i class="fa fa-facebook-square face" title="Share on Facebook"></i></a></li>
+         <li><a href='www.facebook.com'><i class="fa fa-facebook-square face" title="Share on Facebook"></i></a></li>
          <li><a href="#"><i class="fa fa-instagram inst" title="Share on Instagram"></i></a></li>
          <li><a href='www.twitter.com'><i class="fa fa-twitter twit" tittle="share on Twitter"></i></a></li>
          </ul>
@@ -332,9 +345,9 @@
 
 
              <div class="container-fluid">
-             <hr  style="height:5px">
-             <hr  style=" height:10px; border:lightcoral;color:#333;background-color:#333">
-             <hr  style="height:15px;border:rgb(240, 126, 126);color:#333;background-color:#333">
+              <hr  style=" height:3px; border:lightcoral;color:#333;background-color:cadetblue">
+             <hr  style=" height:6px; border:lightcoral;color:#333;background-color:cadetblue">
+             <hr  style="height:9px;border:rgb(240, 126, 126);color:#333;background-color:cadetblue">
             </div>
 
 

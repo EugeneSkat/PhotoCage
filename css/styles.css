@@ -57,6 +57,27 @@ font-family: monospace;
     margin-left: 300px;
     margin-top: 15px;
 }
+.form__btnGA:hover{
+color:cadetblue;
+}
+.form__btnGA
+{
+  font-family: 'PT Sans', sans-serif;
+    background-color: wheat;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 20px;
+    width: 150px;
+    height:85px;
+    border: 0;
+    padding: 14px 0;
+    cursor: pointer;
+    outline: none;
+    margin-top: 15px;
+    margin-left: -40px;
+}
 .form__btn {
     font-family: 'PT Sans', sans-serif;
     background-color: wheat;
@@ -73,6 +94,27 @@ font-family: monospace;
     outline: none;
     margin-top: 15px;
     margin-left: -40px;
+}
+.form__btn3
+{
+  font-family: 'PT Sans', sans-serif;
+  background-color: wheat;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 20px;
+  width: 150px;
+  height:85px;
+  border: 0;
+  padding: 14px 0;
+  cursor: pointer;
+  outline: none;
+  margin-top: 15px;
+  margin-left: -40px;
+}
+.form__btn3:hover{
+  color:red
 }
 .Share
 {
@@ -95,7 +137,7 @@ font-family: monospace;
     text-align: center;
     position: static;
   }
-  
+
   .form__input {
     background-color: #fff;
     font-size: 16px;
@@ -284,9 +326,10 @@ font-family: monospace;
   }
   .button_form:hover{
     background:cadetblue;
+    text-decoration: none;
   }
   .nav-but {
-    text-decoration: none;
+    text-decoration:none;
     display: inline-block;
     align-self: center;
     width: 70px;
@@ -313,6 +356,7 @@ font-family: monospace;
   }
 .nav-panel
 {
+  text-decoration:none;
   width: 100%;
   background-color: bisque;
 }
